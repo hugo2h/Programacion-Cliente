@@ -6,5 +6,5 @@ export function numeros(numero1, numero2){
         valor = valor *2;
         
     }
-    
+    return valor;
 }
