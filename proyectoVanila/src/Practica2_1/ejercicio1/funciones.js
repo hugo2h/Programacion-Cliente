@@ -35,7 +35,7 @@ export function numeroMes(numero){
                 mes = "Octubre"
                 break;
         case 11:
-                "Noviembre"
+                mes = "Noviembre"
                 break;
         case 12:
                mes = "Diciembre"
@@ -46,6 +46,6 @@ export function numeroMes(numero){
         }
         return console.log(`El mes número ${numero} es ${mes}`);
     } else{
-        console.log("No funciona")
+        console.log(`Error: El ${numero} debe ser un número entre 1 y 12`);
     }
 }
