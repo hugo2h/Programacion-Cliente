@@ -3,118 +3,47 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Interprete from './components/UT02/ejercicio2_03/ejercicio2/Interprete'
+import Contenedor from './components/UT02/ejercicio2_03/ejercicio1/Contenedor'
+import Pelicula from './components/UT02/ejercicio2_03/ejercicio3/Pelicula'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
+       <section id="center">
+        <h2>¡Hola,React!</h2>
+
+      <Contenedor>
+      <Interprete
+        nombre="Hugo" 
+        imagen="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS592MI5HPcc05BaM2-C3WPuw4DYiWJojYKm9qsV1EJ_hl1cmESl-Bsozg&s=10"
         >
-          Count is {count}
-        </button>
-      </section>
+          Esto son los cocokranes
+        </Interprete>
 
-      <div className="ticks"></div>
+        <Interprete
+        nombre="Bomboclat"
+        imagen="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5mFWVupn0tVyACf1xAk73qVmPmvxglw0gm1a3TFIYw&s=10"
+        >
+          MI BOMBOCLAAAT
+        </Interprete>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+      </Contenedor>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      <Pelicula
+      titulo="Club de la Lucha"
+      direccion="David Fincher"
+      cartelera="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnNDrJNgxA5hZPfuhD6Shb7wmNdvJ_lJe90KTII7vbQ&s=10"
+
+      >
+        Narra la historia de un empleado de oficina aburrido e insomne que crea un club de pelea secreto con un vendedor de jabón anarquista.
+        
+        Elenco Principal Edward Norton como el Narrador (protagonista sin nombre) Brad Pitt como Tyler Durden Helena Bonham Carter como Marla Singer
+      </Pelicula>
+       
+        </section>
     </>
   )
 }
