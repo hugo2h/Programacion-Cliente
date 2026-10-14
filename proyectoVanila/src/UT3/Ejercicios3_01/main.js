@@ -1,7 +1,7 @@
 "use strict";
 
-import { sumando } from "./Ejercicios3_01/ejercicio1.js";
-import { imprimirTabla } from "./Ejercicios3_01/ejercicio2.js";
+import { sumando } from "./ejercicio1.js";
+import { imprimirTabla } from "./ejercicio2.js";
 
 console.log("Ejercicio 1");
 
