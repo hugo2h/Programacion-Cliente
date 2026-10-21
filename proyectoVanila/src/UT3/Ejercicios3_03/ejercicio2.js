@@ -18,8 +18,31 @@ const discente = {
 
     calcularMedia:  () => {
 
-        return (discente.notas.primera + discente.notas.segunda + discente.notas.tercera) / 3;
+        return `La media es de: ${(discente.notas.primera + discente.notas.segunda + discente.notas.tercera) / 3}`;
+    },
+
+    imprimirAficiones: () => {
+        let cadena = "";
+
+         discente.aficiones.map((v,i,a) => {
+            cadena =`${cadena} ${v}`;
+        })
+        return cadena;
+
+    },
+
+    imprimirInforme: () =>{
+        
+            console.log(`Discente: ${discente.nombre} ${discente.apellidos}`)
+            console.log(`Aficiones:`) 
+            discente.aficiones.map((v,i,a) => {
+            console.log(`   -${v}`);
+        })
+            console.log(`Notas: ${discente.notas.primera}, ${discente.notas.segunda}, ${discente.notas.tercera}`);
+        }
+
     }
-}
+
+
 
 export {discente};
